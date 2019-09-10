@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Moser Damasceno">
+    <meta name="keyword" content="">
+    <title>Piql Admin</title>
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+      <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"><img class="navbar-brand-full" src="img/brand/EDM_logo.png" alt="EDM Logo"><img class="navbar-brand-minimized" src="img/brand/EDM_logo.png" alt="EDM Logo"></a>
+      <button class="navbar-toggler sidebar-toggler d-md-down-none button-menu" type="button" data-toggle="sidebar-lg-show"><i class="icon-list"></i></button>
+      <ul class="nav navbar-nav d-md-down-none brand-company">
+        <li class="nav-item px-3"><img class="navbar-brand-full" src="img/brand/ambev_logo.png" alt="Ambev Logo"></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto menu-options">
+        <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell"></i><span class="badge badge-pill badge-primary">15</span></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header text-center"><strong>Notificações</strong></div><a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+            <div class="dropdown-header text-center"><strong>Settings</strong></div><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a><a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a><a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+          </div>
+        </li>
+        <li class="nav-item d-md-down-none"><span>Marina Almeida</span></li>
+        <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"><i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header text-center"><strong>Account</strong></div><a class="dropdown-item" href="#"><i class="fa fa-bell-o"></i> Updates<span class="badge badge-info">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Messages<span class="badge badge-success">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Tasks<span class="badge badge-danger">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Comments<span class="badge badge-warning">42</span></a>
+            <div class="dropdown-header text-center"><strong>Settings</strong></div><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a><a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a><a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Payments<span class="badge badge-secondary">42</span></a><a class="dropdown-item" href="#"><i class="fa fa-file"></i> Projects<span class="badge badge-primary">42</span></a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fa fa-shield"></i> Lock Account</a><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_principal.png"><img class="icon-menu-item active" src="img/icons/icone_principal_active.png"></span><span class="texto-menu">Principal</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="protocolos.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_ver_protocolos.png"><img class="icon-menu-item active" src="img/icons/icone_ver_protocolos_active.png"></span><span class="texto-menu">Ver protocolos</span><span class="badge badge-menu">12</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="crar-protocolo.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_criar_protocolo.png"><img class="icon-menu-item active" src="img/icons/icone_criar_protocolo_active.png"></span><span class="texto-menu">Criar protocolo</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="usuarios.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_usuarios.png"><img class="icon-menu-item active" src="img/icons/icone_usuarios_active.png"></span><span class="texto-menu">Usuários</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="upload.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_upload-de-arquivos.png"><img class="icon-menu-item active" src="img/icons/icone_upload-de-arquivos_active.png"></span><span class="texto-menu">Upload de arquivos</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="formulario.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_formulario.png"><img class="icon-menu-item active" src="img/icons/icone_formulario_active.png"></span><span class="texto-menu">Formulário</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="assinar-arquivo.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_assinar_arquivos.png"><img class="icon-menu-item active" src="img/icons/icone_assinar_arquivos_active.png"></span><span class="texto-menu">Assinar arquivos</span></a></li>
+            <li class="nav-title">Theme</li>
+            <li class="nav-item"><a class="nav-link" href="colors.html"><i class="nav-icon icon-drop"></i> Colors</a></li>
+            <li class="nav-item"><a class="nav-link" href="typography.html"><i class="nav-icon icon-pencil"></i> Typography</a></li>
+            <li class="nav-title">Components</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-puzzle"></i> Base</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"> Breadcrumb</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/cards.html"> Cards</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/carousel.html"> Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/collapse.html"> Collapse</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/forms.html"> Forms</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/jumbotron.html"> Jumbotron</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/list-group.html"> List group</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/navs.html"> Navs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/pagination.html"> Pagination</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/popovers.html"> Popovers</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/progress.html"> Progress</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/scrollspy.html"> Scrollspy</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/switches.html"> Switches</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tables.html"> Tables</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tabs.html"> Tabs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tooltips.html"> Tooltips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-cursor"></i> Buttons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><i class="nav-icon icon-cursor"></i> Buttons</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><i class="nav-icon icon-cursor"></i> Buttons Group</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><i class="nav-icon icon-cursor"></i> Dropdowns</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/brand-buttons.html"><i class="nav-icon icon-cursor"></i> Brand Buttons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="charts.html"><i class="nav-icon icon-pie-chart"></i> Charts</a></li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-star"></i> Icons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="icons/coreui-icons.html"><i class="nav-icon icon-star"></i> CoreUI Icons<span class="badge badge-success">NEW</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/flags.html"><i class="nav-icon icon-star"></i> Flags</a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/font-awesome.html"><i class="nav-icon icon-star"></i> Font Awesome<span class="badge badge-secondary">4.7</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/simple-line-icons.html"><i class="nav-icon icon-star"></i> Simple Line Icons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-bell"></i> Notifications</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><i class="nav-icon icon-bell"></i> Alerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><i class="nav-icon icon-bell"></i> Badge</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><i class="nav-icon icon-bell"></i> Modals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="widgets.html"><i class="nav-icon icon-calculator"></i> Widgets<span class="badge badge-primary">NEW</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-title">Extras</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-star"></i> Pages</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="login.html" target="_top"><i class="nav-icon icon-star"></i> Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html" target="_top"><i class="nav-icon icon-star"></i> Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="404.html" target="_top"><i class="nav-icon icon-star"></i> Error 404</a></li>
+                <li class="nav-item"><a class="nav-link" href="500.html" target="_top"><i class="nav-icon icon-star"></i> Error 500</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header"><i class="fa fa-align-justify"></i> Bootstrap Modals</div>
+                  <div class="card-body">
+                    <!-- Button trigger modal-->
+                    <button class="btn btn-secondary mb-1" type="button" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+                    <button class="btn btn-secondary mb-1" type="button" data-toggle="modal" data-target="#largeModal">Launch large modal</button>
+                    <button class="btn btn-secondary mb-1" type="button" data-toggle="modal" data-target="#smallModal">Launch small modal</button>
+                    <hr>
+                    <button class="btn btn-primary mb-1" type="button" data-toggle="modal" data-target="#primaryModal">Primary modal</button>
+                    <button class="btn btn-success mb-1" type="button" data-toggle="modal" data-target="#successModal">Success modal</button>
+                    <button class="btn btn-warning mb-1" type="button" data-toggle="modal" data-target="#warningModal">Warning modal</button>
+                    <button class="btn btn-danger mb-1" type="button" data-toggle="modal" data-target="#dangerModal">Danger modal</button>
+                    <button class="btn btn-info mb-1" type="button" data-toggle="modal" data-target="#infoModal">Info modal</button>
+                  </div>
+                </div>
+              </div>
+              <!-- /.col-->
+            </div>
+            <!-- /.row-->
+          </div>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="primaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-primary" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-success" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-success" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-warning" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-warning" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="dangerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-danger" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-danger" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+          <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-info" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                  <button class="btn btn-info" type="button">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content-->
+            </div>
+            <!-- /.modal-dialog-->
+          </div>
+          <!-- /.modal-->
+        </div>
+      </main>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+  </body>
+</html>

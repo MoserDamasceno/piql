@@ -1,0 +1,112 @@
+header.app-header.navbar
+  button.navbar-toggler.sidebar-toggler.d-lg-none.mr-auto(type="button" data-toggle="sidebar-show")
+    span.navbar-toggler-icon
+  a.navbar-brand(href="#")
+    img.navbar-brand-full(src="img/brand/EDM_logo.png" alt="EDM Logo")
+    img.navbar-brand-minimized(src="img/brand/EDM_logo.png" alt="EDM Logo")
+  button.navbar-toggler.sidebar-toggler.d-md-down-none.button-menu(type="button" data-toggle="sidebar-lg-show")
+    i.icon-list
+  if !starter
+    ul.nav.navbar-nav.d-md-down-none.brand-company
+      li.nav-item.px-3
+        img.navbar-brand-full(src="img/brand/ambev_logo.png" alt="Ambev Logo")
+     
+    ul.nav.navbar-nav.ml-auto.menu-options
+      li.nav-item.dropdown
+        a.nav-link(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+          i.icon-bell
+          span.badge.badge-pill.badge-primary 15
+        .dropdown-menu.dropdown-menu-right
+          .dropdown-header.text-center
+            strong Notificações
+          a.dropdown-item(href="#")
+            i.fa.fa-bell-o
+            |  Updates
+            span.badge.badge-info 42
+          a.dropdown-item(href="#")
+            i.fa.fa-envelope-o
+            |  Messages
+            span.badge.badge-success 42
+          a.dropdown-item(href="#")
+            i.fa.fa-tasks
+            |  Tasks
+            span.badge.badge-danger 42
+          a.dropdown-item(href="#")
+            i.fa.fa-comments
+            |  Comments
+            span.badge.badge-warning 42
+          .dropdown-header.text-center
+            strong Settings
+          a.dropdown-item(href="#")
+            i.fa.fa-user
+            |  Profile
+          a.dropdown-item(href="#")
+            i.fa.fa-wrench
+            |  Settings
+          a.dropdown-item(href="#")
+            i.fa.fa-usd
+            |  Payments
+            span.badge.badge-secondary 42
+          a.dropdown-item(href="#")
+            i.fa.fa-file
+            |  Projects
+            span.badge.badge-primary 42
+          .dropdown-divider
+          a.dropdown-item(href="#")
+            i.fa.fa-shield
+            |  Lock Account
+          a.dropdown-item(href="#")
+            i.fa.fa-lock
+            |  Logout
+      li.nav-item.d-md-down-none
+        span Marina Almeida
+      li.nav-item.dropdown
+        a.nav-link(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+          img.img-avatar(src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com")
+          i.fa.fa-chevron-down
+        .dropdown-menu.dropdown-menu-right
+          .dropdown-header.text-center
+            strong Account
+          a.dropdown-item(href="#")
+            i.fa.fa-bell-o
+            |  Updates
+            span.badge.badge-info 42
+          a.dropdown-item(href="#")
+            i.fa.fa-envelope-o
+            |  Messages
+            span.badge.badge-success 42
+          a.dropdown-item(href="#")
+            i.fa.fa-tasks
+            |  Tasks
+            span.badge.badge-danger 42
+          a.dropdown-item(href="#")
+            i.fa.fa-comments
+            |  Comments
+            span.badge.badge-warning 42
+          .dropdown-header.text-center
+            strong Settings
+          a.dropdown-item(href="#")
+            i.fa.fa-user
+            |  Profile
+          a.dropdown-item(href="#")
+            i.fa.fa-wrench
+            |  Settings
+          a.dropdown-item(href="#")
+            i.fa.fa-usd
+            |  Payments
+            span.badge.badge-secondary 42
+          a.dropdown-item(href="#")
+            i.fa.fa-file
+            |  Projects
+            span.badge.badge-primary 42
+          .dropdown-divider
+          a.dropdown-item(href="#")
+            i.fa.fa-shield
+            |  Lock Account
+          a.dropdown-item(href="#")
+            i.fa.fa-lock
+            |  Logout
+  //- button.navbar-toggler.aside-menu-toggler.d-md-down-none(type="button" data-toggle="aside-menu-lg-show")
+  //-   span.navbar-toggler-icon
+  //- button.navbar-toggler.aside-menu-toggler.d-lg-none(type="button" data-toggle="aside-menu-show")
+  //-   span.navbar-toggler-icon

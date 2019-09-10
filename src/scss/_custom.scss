@@ -1,0 +1,188 @@
+// Here you can add other styles
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+}
+.app-header{
+    border-bottom: 0;
+    border-top: 5px solid #00448c;
+    // box-shadow: 0px -7px 25px -5px black;
+}
+
+.brand-company{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-brand{
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 5px solid $orange;
+    margin-top: -5px;
+}
+
+.navbar-nav .nav-link{
+    color: #b1b1b1;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sidebar .nav-link{
+    font-weight: 600;
+    // font-size: 12px;
+}
+
+.app-body {
+    // z-index: 1020;
+    .main{
+        padding-top: 40px;
+        box-shadow: inset 0 0 40px -25px black;
+        .sidebar{
+
+        }
+    }
+}
+
+
+.badge-pill {
+    height: 18px;
+    width: 18px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link i.icon-bell {
+    font-size: 20px;
+}
+
+.img-avatar{
+    height: 40px !important;
+}
+
+
+.navbar-nav{
+    padding-right: 20px;
+}
+
+.menu-options .nav-item{
+    padding: 0 15px;
+}
+
+.button-menu{
+    i{
+        font-size: 22px;
+        color: #a8a8a8;
+    }
+}
+
+.card{
+    border: 0;
+}
+
+.sidebar-nav{
+    .nav{
+        .nav-item{
+            border-bottom: 1px solid #f2f2f2;
+
+            .nav-link{    
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 17px 15px;
+
+                .icone-menu{
+                    width: 30px;
+                }
+
+                .texto-menu{
+                    flex-grow: 1;
+                }
+            
+                .badge.badge-menu{
+                    border: 1px solid #c5c9ce;
+                    // border-radius: 8px;
+                    height: 22px;
+                    width: 22px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background-color: $orange;
+                        position: absolute;
+                        top: -3px;
+                        right: -3px;
+                    }
+                }
+
+                .icon-menu-item{
+                    display: block;
+
+                    &.active{
+                        display: none;
+                    }
+                }
+
+                &.active{
+                    .icon-menu-item{
+                        display: none;
+
+                        &.active{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &.open{
+                background: #fff;
+                a{
+                    color: #9c9eaa;
+                }
+            }
+
+            
+        }
+    }
+}
+
+
+.app-header .dropdown-menu {
+    width: 300px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 50px -35px black;
+    top: 200%;
+    right: -15px !important;
+
+
+    &::before{
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        position: absolute;
+        top: -5px;
+        right: 25px;
+        border-radius: 5px;
+        transform: rotateZ(45deg);
+        z-index: 0;
+        box-shadow: 0 0 40px -10px black;
+    }
+
+    .dropdown-header{
+        background-color: $white;
+        z-index: 1;
+        position: relative;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+}

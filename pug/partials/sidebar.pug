@@ -1,0 +1,207 @@
+.sidebar
+  nav.sidebar-nav
+    ul.nav
+      li.nav-item
+        a.nav-link(href='index.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_principal.png")
+            img.icon-menu-item.active(src="img/icons/icone_principal_active.png")
+          span.texto-menu Principal
+      li.nav-item
+        a.nav-link(href='protocolos.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_ver_protocolos.png")
+            img.icon-menu-item.active(src="img/icons/icone_ver_protocolos_active.png")
+          span.texto-menu Ver protocolos
+          span.badge.badge-menu 12
+      li.nav-item
+        a.nav-link(href='crar-protocolo.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_criar_protocolo.png")
+            img.icon-menu-item.active(src="img/icons/icone_criar_protocolo_active.png")
+          span.texto-menu Criar protocolo
+      li.nav-item
+        a.nav-link(href='usuarios.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_usuarios.png")
+            img.icon-menu-item.active(src="img/icons/icone_usuarios_active.png")
+          span.texto-menu Usuários
+      li.nav-item
+        a.nav-link(href='upload.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_upload-de-arquivos.png")
+            img.icon-menu-item.active(src="img/icons/icone_upload-de-arquivos_active.png")
+          span.texto-menu Upload de arquivos
+      li.nav-item
+        a.nav-link(href='formulario.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_formulario.png")
+            img.icon-menu-item.active(src="img/icons/icone_formulario_active.png")
+          span.texto-menu Formulário
+      li.nav-item
+        a.nav-link(href='assinar-arquivo.html')
+          span.icone-menu
+            img.icon-menu-item(src="img/icons/icone_assinar_arquivos.png")
+            img.icon-menu-item.active(src="img/icons/icone_assinar_arquivos_active.png")
+          span.texto-menu Assinar arquivos
+      if !starter
+        li.nav-title
+          | Theme
+        li.nav-item
+          a.nav-link(href="colors.html")
+            i.nav-icon.icon-drop
+            |  Colors
+        li.nav-item
+          a.nav-link(href="typography.html")
+            i.nav-icon.icon-pencil
+            |  Typography
+        li.nav-title
+          | Components
+        li.nav-item.nav-dropdown
+          a.nav-link.nav-dropdown-toggle(href="#")
+            i.nav-icon.icon-puzzle
+            |  Base
+          ul.nav-dropdown-items
+            li.nav-item
+              a.nav-link(href='base/breadcrumb.html')
+                |  Breadcrumb
+            li.nav-item
+              a.nav-link(href='base/cards.html')
+                |  Cards
+            li.nav-item
+              a.nav-link(href='base/carousel.html')
+                |  Carousel
+            li.nav-item
+              a.nav-link(href='base/collapse.html')
+                |  Collapse
+            li.nav-item
+              a.nav-link(href='base/forms.html')
+                |  Forms
+            li.nav-item
+              a.nav-link(href='base/jumbotron.html')
+                |  Jumbotron
+            li.nav-item
+              a.nav-link(href='base/list-group.html')
+                |  List group
+            li.nav-item
+              a.nav-link(href='base/navs.html')
+                |  Navs
+            li.nav-item
+              a.nav-link(href='base/pagination.html')
+                |  Pagination
+            li.nav-item
+              a.nav-link(href='base/popovers.html')
+                |  Popovers
+            li.nav-item
+              a.nav-link(href='base/progress.html')
+                |  Progress
+            li.nav-item
+              a.nav-link(href='base/scrollspy.html')
+                |  Scrollspy
+            li.nav-item
+              a.nav-link(href='base/switches.html')
+                |  Switches
+            li.nav-item
+              a.nav-link(href='base/tables.html')
+                |  Tables
+            li.nav-item
+              a.nav-link(href='base/tabs.html')
+                |  Tabs
+            li.nav-item
+              a.nav-link(href='base/tooltips.html')
+                |  Tooltips
+        li.nav-item.nav-dropdown
+          a.nav-link.nav-dropdown-toggle(href="#")
+            i.nav-icon.icon-cursor
+            |  Buttons
+          ul.nav-dropdown-items
+            li.nav-item
+              a.nav-link(href='buttons/buttons.html')
+                i.nav-icon.icon-cursor
+                |  Buttons
+            li.nav-item
+              a.nav-link(href='buttons/button-group.html')
+                i.nav-icon.icon-cursor
+                |  Buttons Group
+            li.nav-item
+              a.nav-link(href='buttons/dropdowns.html')
+                i.nav-icon.icon-cursor
+                |  Dropdowns
+            li.nav-item
+              a.nav-link(href='buttons/brand-buttons.html')
+                i.nav-icon.icon-cursor
+                |  Brand Buttons
+        li.nav-item
+          a.nav-link(href='charts.html')
+            i.nav-icon.icon-pie-chart
+            |  Charts
+        li.nav-item.nav-dropdown
+          a.nav-link.nav-dropdown-toggle(href='#')
+            i.nav-icon.icon-star
+            |  Icons
+          ul.nav-dropdown-items
+            li.nav-item
+              a.nav-link(href='icons/coreui-icons.html')
+                i.nav-icon.icon-star
+                |  CoreUI Icons
+                span.badge.badge-success NEW
+            li.nav-item
+              a.nav-link(href='icons/flags.html')
+                i.nav-icon.icon-star
+                |  Flags
+            li.nav-item
+              a.nav-link(href='icons/font-awesome.html')
+                i.nav-icon.icon-star
+                |  Font Awesome
+                span.badge.badge-secondary 4.7
+            li.nav-item
+              a.nav-link(href='icons/simple-line-icons.html')
+                i.nav-icon.icon-star
+                |  Simple Line Icons
+        li.nav-item.nav-dropdown
+          a.nav-link.nav-dropdown-toggle(href='#')
+            i.nav-icon.icon-bell
+            |  Notifications
+          ul.nav-dropdown-items
+            li.nav-item
+              a.nav-link(href='notifications/alerts.html')
+                i.nav-icon.icon-bell
+                |  Alerts
+            li.nav-item
+              a.nav-link(href='notifications/badge.html')
+                i.nav-icon.icon-bell
+                |  Badge
+            li.nav-item
+              a.nav-link(href='notifications/modals.html')
+                i.nav-icon.icon-bell
+                |  Modals
+        li.nav-item
+          a.nav-link(href='widgets.html')
+            i.nav-icon.icon-calculator
+            |  Widgets
+            span.badge.badge-primary NEW
+        li.divider
+        li.nav-title
+          | Extras
+        li.nav-item.nav-dropdown
+          a.nav-link.nav-dropdown-toggle(href='#')
+            i.nav-icon.icon-star
+            |  Pages
+          ul.nav-dropdown-items
+            li.nav-item
+              a.nav-link(href=ajax ? 'login.html' : 'login.html' target="_top")
+                i.nav-icon.icon-star
+                |  Login
+            li.nav-item
+              a.nav-link(href=ajax ? 'register.html' : 'register.html' target="_top")
+                i.nav-icon.icon-star
+                |  Register
+            li.nav-item
+              a.nav-link(href=ajax ? '404.html' : '404.html' target="_top")
+                i.nav-icon.icon-star
+                |  Error 404
+            li.nav-item
+              a.nav-link(href=ajax ? '500.html' : '500.html' target="_top")
+                i.nav-icon.icon-star
+                |  Error 500
+  //- button.sidebar-minimizer.brand-minimizer(type="button")
