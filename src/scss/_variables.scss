@@ -20,10 +20,50 @@ $h6-font-size: 18px !default;
 $orange: #ff5f26 !default;
 $primary: $orange !default;
 
-$table-border-color: transparent !default;
+
 
 $badge-pill-border-radius: 50% !default;
 
 $sidebar-nav-link-active-color: $primary;
 $sidebar-nav-link-hover-color: #9c9eaa;
 $sidebar-nav-link-hover-bg: #f2f2f2;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1360px
+);
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+
+$input-border-width: 2px !default;
+$input-border-color: #ebebeb !default;
+$input-border-radius: 30px !default;
+$btn-border-radius: 30px !default;
+$btn-border-radius-lg: 30px !default;
+$btn-border-radius-sm: 30px !default;
+$input-border-radius-sm: 30px !default;
+$input-border-radius-lg: 30px !default;
+
+$pagination-border-width: 1px !default;
+$pagination-border-color: #f2f2f2 !default;
+
+$pagination-color: #9c9eaa !default;
+$pagination-active-color: $primary !default;
+$pagination-active-bg: white !default;
+$pagination-hover-color: black !default;
+
+$table-border-width: 2px !default;
+$table-border-color: #f2f2f2 !default;
+
+$tooltip-bg: white;
+$tooltip-color: black;
