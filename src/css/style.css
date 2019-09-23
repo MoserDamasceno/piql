@@ -17479,4 +17479,34 @@ select[multiple] {
 .lista-arquivos .arquivos .single-arquivo:last-child {
   border-bottom: 0;
 }
+
+.upload-ingest h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.upload-ingest h2 img {
+  margin-right: 10px;
+}
+
+.upload-ingest h2 span {
+  font-weight: 400;
+  color: #737373;
+}
+
+.upload-ingest h2 span i {
+  margin-left: 5px;
+  transition: -webkit-transform ease 400ms;
+  transition: transform ease 400ms;
+  transition: transform ease 400ms, -webkit-transform ease 400ms;
+}
+
+.upload-ingest h2 a:not(.collapsed) span {
+  color: #ff5f26;
+}
+
+.upload-ingest h2 a:not(.collapsed) span i {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 /*# sourceMappingURL=style.css.map */

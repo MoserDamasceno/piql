@@ -1120,3 +1120,36 @@ select{
         }
     }
 }
+
+.upload-ingest{
+
+    
+    h2{
+        font-size: 13px;
+        font-weight: 600;
+        img{
+            margin-right: 10px;
+        }
+
+        span{
+            font-weight: 400;
+            color: #737373;
+
+            i{
+                margin-left: 5px;
+                transition: transform ease 400ms;
+            }
+        }
+
+        a:not(.collapsed){
+            span{
+                color: $orange;
+
+                i{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+    }
+}
