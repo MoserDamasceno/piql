@@ -17480,6 +17480,15 @@ select[multiple] {
   border-bottom: 0;
 }
 
+.upload-ingest .item-file {
+  border-bottom: 1px solid #d7d7d7;
+  border-radius: 0;
+}
+
+.upload-ingest .item-file .card-header {
+  padding: 15px 20px;
+}
+
 .upload-ingest h2 {
   font-size: 13px;
   font-weight: 600;
