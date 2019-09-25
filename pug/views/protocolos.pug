@@ -1,0 +1,177 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Protocolos
+    .row
+      .col-sm-12
+        form(action="#")
+          .card
+            .card-body
+              .row  
+                .col-sm-4.texto-protocolo
+                  span Total de protocolos: 
+                    b 60
+                .col-sm-4.pesquisa-protocolo
+                  .controls
+                    .input-group
+                      input.form-control#appendedInputButton(placeholder="Pesquisar...")
+                      span.input-group-append
+                        button.btn.btn-secondary(type="button")
+                          i.icon-magnifier
+                .col-sm-4.filtro-protocolo
+                  | Filtrar:
+                  select.form-control(name="select1")
+                    option(value="0") Todos
+                    option(value="1") Option #1
+                    option(value="2") Option #2
+                    option(value="3") Option #3
+    .row
+      .col-sm-12
+        .card
+          .card-body
+            table.table-protocolos.table.table-responsive-sm.table-bordered.table-hover.datatables
+              thead
+                tr
+                  th ID
+                  th Título
+                  th Usuário
+                  th Data
+                  th Hora
+                  th Status
+                  th 
+              tbody
+                tr.notification
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-like
+                      .btn-group
+                        .dropdown
+                          button#dropdownMenuButton.btn.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Recebido
+                          .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                            a.dropdown-item(href='#') Recebido
+                            a.dropdown-item(href='#') Encaminhado
+                            a.dropdown-item(href='#') Cancelado
+                            a.dropdown-item(href='#') Em andamento
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr.notification
+                  td 001
+                  td SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td William Varella
+                  td 12/Abril/2019
+                  td 18:13
+                  td
+                    .with-icon
+                      i.icon-action-redo
+                      | Encaminhado
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr.notification
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-check
+                      | Concluído
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-reload
+                      | Em andamento
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-like
+                      | Recebido
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-like
+                      | Recebido
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td 001
+                  td Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+                  td.nowrap Marina Almeida
+                  td.nowrap 22/Abril/2019
+                  td.nowrap 18:07
+                  td.nowrap
+                    .with-icon
+                      i.icon-like
+                      | Recebido
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+    .row
+      .col-sm-12
+        ul.pagination.justify-content-end
+          li.page-item
+            a.page-link(href='#', aria-label='Previous')
+              span(aria-hidden='true') 
+                i.icon-arrow-left
+              span.sr-only Anterior
+          li.page-item
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item.active
+            a.page-link(href='#') 4
+          li.page-item
+            a.page-link(href='#') 5
+          li.page-item
+            a.page-link(href='#') 6
+          li.page-item
+            a.page-link(href='#', aria-label='Next')
+              span(aria-hidden='true') 
+                i.icon-arrow-right
+              span.sr-only Próximo

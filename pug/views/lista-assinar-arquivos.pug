@@ -1,0 +1,76 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Assinar arquivos
+    .row
+      .col-md-12
+        .card
+          .card-body
+            table.table-assinar.table.table-responsive-sm.table-bordered.table-hover
+              tbody
+                tr
+                  td 
+                    img(src="img/icons/icon-pptx.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.pptx
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinar
+                tr
+                  td 
+                    img(src="img/icons/icon-pdf.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.pdf
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinar
+                tr
+                  td 
+                    img(src="img/icons/icon-docx.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.docx
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinar
+                tr
+                  td 
+                    img(src="img/icons/icon-xlsx.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.xlsx
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinar
+                tr.assinado
+                  td 
+                    img(src="img/icons/icon-jpg.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.jpg
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinado
+                tr.assinado
+                  td 
+                    img(src="img/icons/icon-png.png")
+                  td 
+                    a(href="#") Piql_access_Ambev_presentation.png
+                  td
+                    a.link-assinar(href="assinar-arquivos.html", title='Assinar')
+                      i.icon-lock
+                      | Assinado
+                

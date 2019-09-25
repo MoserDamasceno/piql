@@ -1,0 +1,48 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='node_modules/bs-custom-file-input/dist/bs-custom-file-input.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Criar protocolo
+    .row.criar-protocolo
+      .col-md-12
+        .card
+          .card-body
+            form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='destinatario') Destinatário
+                .col-md-10
+                  select#destinatario.form-control(name="destinatario")
+                    option(value="0") Selecione o destinatário
+                    option(value="1") Option #1
+                    option(value="2") Option #2
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='nome') Nome
+                .col-md-10
+                  input#nome.form-control(type='text', name='nome', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='informacoes-adicionais') Informações adicionais
+                .col-md-10
+                  textarea#informacoes-adicionais.form-control(name='informacoes-adicionais', rows='5', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right Anexos
+                .col-md-10
+                  div.custom-file
+                    input.custom-file-input#customFile(type="file")
+                    label.custom-file-label(for="customFile")                       
+                      div
+                        i.icon-cloud-upload 
+                        | Arraste os arquivos aqui ou clique para selecionar
+          .card-footer.text-right
+            button.btn.btn-primary.ml-3(type='submit')
+              |  Criar protocolo

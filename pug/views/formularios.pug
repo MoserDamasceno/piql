@@ -1,0 +1,85 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Formulários
+    .row
+      .col-md-12
+        .card
+          .card-body
+            form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='formulario') Formulário
+                .col-md-10
+                  input#formulario.form-control(type='text', name='formulario', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='nome') Nome
+                .col-md-10
+                  input#nome.form-control(type='text', name='nome', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='data-de-nascimento') Data de nascimento
+                .col-md-10
+                  input#data-de-nascimento.form-control(type='text', name='data-de-nascimento', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='local-de-nascimento') Local de nascimento
+                .col-md-10
+                  input#local-de-nascimento.form-control(type='text', name='local-de-nascimento', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='cpf') CPF
+                .col-md-10
+                  input#cpf.form-control(type='text', name='cpf', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='rg') RG
+                .col-md-10
+                  input#rg.form-control(type='text', name='rg', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='informacoes-adicionais') Informações adicionais
+                .col-md-10
+                  textarea#informacoes-adicionais.form-control(name='informacoes-adicionais', rows='5', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='altura') Altura
+                .col-md-10
+                  input#altura.form-control(type='text', name='altura', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='peso') Peso
+                .col-md-10
+                  input#peso.form-control(type='text', name='peso', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='e-mail') E-mail
+                .col-md-10
+                  input#e-mail.form-control(type='text', name='e-mail', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='telefone-celular') Telefone celular
+                .col-md-10
+                  input#telefone-celular.form-control(type='text', name='telefone-celular', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='telefone-celular-pessoal') Telefone celular pessoal
+                .col-md-10
+                  input#telefone-celular-pessoal.form-control(type='text', name='telefone-celular-pessoal', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='outros-aparelhos-de-transmissao-de-dados') Outros aparelhos de transmissão de dados
+                .col-md-10
+                  input#outros-aparelhos-de-transmissao-de-dados.form-control(type='text', name='outros-aparelhos-de-transmissao-de-dados', placeholder='')
+              .form-group.row
+                label.col-md-2.col-form-label.text-right(for='numero-de-passaporte') Número de passaporte
+                .col-md-10
+                  input#numero-de-passaporte.form-control(type='text', name='numero-de-passaporte', placeholder='')
+          .card-footer.text-right
+            .upload-file-button
+              input#piql-file(type='file', name='piql-file')
+              label.btn.btn-primary(for='piql-file')
+                i.fa.fa-film
+                |  PIQL File
+            button.btn.btn-primary.ml-3(type='submit')
+              i.icon-lock
+              |  Assinar documento

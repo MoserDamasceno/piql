@@ -1,0 +1,111 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Visualizar protocolo
+    .row.visualizar-protocolo
+      .col-sm-12
+        .card
+          .card-header
+            .row
+              .col-sm-12
+                h2 Título documento - SCAN documentos contas 2019 - Itaú Unibanco Holding
+              .col-sm-12
+                hr
+          .card-body
+            .row.row-infos
+              .col-sm-6
+                h3 Criação  
+                .row
+                  .col.col-sm-4.with-image
+                    img(src="img/brand/img-avatar.png")
+                    div.content
+                      span.title William Varella
+                      span.text Marketing
+                  .col
+                    div.content
+                      span.title Data da criação
+                      span.text 22/Abril/2019
+                  .col
+                    div.content
+                      span.title Status
+                      span.text Recebido
+                  .col
+                    div.content
+                      span.title Protocolo ID
+                      span.text 0022
+              .col-sm-6
+                h3 Destino
+                .row
+                  .col.col-sm-4.with-image
+                    img(src="img/brand/img-avatar.png")
+                    div.content
+                      span.title Marina Almeida
+                      span.text Recursos Humanos
+                  .col
+                    div.content
+                      span.title Data da assinatura
+                      span.text 23/Abril/2019
+                  .col
+                    div.content
+                      span.title Data da assinatura
+                      span.text 25/Abril/2019
+                  .col
+                    div.content
+                      span.title Trâmite ID
+                      span.text 0047
+              .col-sm-12
+                hr
+            .row.row-content
+              .col-sm-12
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              .col-sm-12
+                hr
+            .row.row-files
+              .col-sm-12
+                h4 Anexos
+              .col-sm-4
+                .file-link
+                  a(href="#") 
+                    img(src="img/icons/icon-pdf-red.png")
+                    | Imagem01-itau-unibanco-holding-categoria-01-.pdf
+              .col-sm-4
+                .file-link
+                  a(href="#") 
+                    img(src="img/icons/icon-pdf-red.png")
+                    | Imagem02-itau-unibanco-holding-categoria-01-.pdf
+              .col-sm-4
+                .file-link
+                  a(href="#") 
+                    img(src="img/icons/icon-pdf-red.png")
+                    | Imagem03-itau-unibanco-holding-categoria-01-.pdf
+              .col-sm-12
+                hr
+          .card-footer
+            .row
+              .col-sm-12.text-right
+                a.link-back(href="#")
+                  i.cui-arrow-left
+                  | Voltar para protocolos
+                button.btn.btn-receber
+                  i.icon-like
+                  | Receber
+                button.btn.btn-encaminhar
+                  i.icon-action-redo
+                  | Encaminhar
+                button.btn.btn-concluir
+                  i.icon-check
+                  | Concluir
+
+
+

@@ -1,0 +1,168 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Usuários
+    .row
+      .col-sm-12
+        form(action="#")
+          .card
+            .card-body
+              .row  
+                .col-sm-4.texto-protocolo
+                  span Total de usuários: 
+                    b 12
+                .col-sm-4.pesquisa-protocolo
+                  .controls
+                    .input-group
+                      input.form-control#appendedInputButton(placeholder="Pesquisar...")
+                      span.input-group-append
+                        button.btn.btn-secondary(type="button")
+                          i.icon-magnifier
+                .col-sm-4.filtro-protocolo
+                  | Filtrar:
+                  select.form-control(name="select1")
+                    option(value="0") Todos
+                    option(value="1") Option #1
+                    option(value="2") Option #2
+                    option(value="3") Option #3
+    .row
+      .col-sm-12
+        .card
+          .card-body
+            table.table-protocolos.table.table-responsive-sm.table-bordered.table-hover.datatables
+              thead
+                tr
+                  th.nowrap Nome
+                  th.nowrap E-mail
+                  th.nowrap Setor
+                  th.nowrap Nível do sistema
+                  th.nowrap Protocolos
+                  th.nowrap 
+              tbody
+                tr
+                  td.nowrap Marina Almeida
+                  td.nowrap marina_almeida@gmail.com
+                  td.nowrap Marketing
+                  td.nowrap Administrador
+                  td.nowrap 23
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap William Varella
+                  td.nowrap wmvarella@gmail.com
+                  td.nowrap Recursos Humanos
+                  td.nowrap Editor
+                  td.nowrap 12
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap Marina Almeida
+                  td.nowrap marina_almeida@gmail.com
+                  td.nowrap Marketing
+                  td.nowrap Administrador
+                  td.nowrap 23
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap William Varella
+                  td.nowrap wmvarella@gmail.com
+                  td.nowrap Recursos Humanos
+                  td.nowrap Editor
+                  td.nowrap 12
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap Marina Almeida
+                  td.nowrap marina_almeida@gmail.com
+                  td.nowrap Marketing
+                  td.nowrap Administrador
+                  td.nowrap 23
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap William Varella
+                  td.nowrap wmvarella@gmail.com
+                  td.nowrap Recursos Humanos
+                  td.nowrap Editor
+                  td.nowrap 12
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap Marina Almeida
+                  td.nowrap marina_almeida@gmail.com
+                  td.nowrap Marketing
+                  td.nowrap Administrador
+                  td.nowrap 23
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap William Varella
+                  td.nowrap wmvarella@gmail.com
+                  td.nowrap Recursos Humanos
+                  td.nowrap Editor
+                  td.nowrap 12
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap Marina Almeida
+                  td.nowrap marina_almeida@gmail.com
+                  td.nowrap Marketing
+                  td.nowrap Administrador
+                  td.nowrap 23
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                tr
+                  td.nowrap William Varella
+                  td.nowrap wmvarella@gmail.com
+                  td.nowrap Recursos Humanos
+                  td.nowrap Editor
+                  td.nowrap 12
+                  td
+                    a.link-editar(href="#", data-toggle='tooltip', title='', data-original-title='Editar')
+                      i.icon-options-vertical
+                
+    .row
+      .col-sm-12
+        ul.pagination.justify-content-end
+          li.page-item
+            a.page-link(href='#', aria-label='Previous')
+              span(aria-hidden='true') 
+                i.icon-arrow-left
+              span.sr-only Anterior
+          li.page-item
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item.active
+            a.page-link(href='#') 4
+          li.page-item
+            a.page-link(href='#') 5
+          li.page-item
+            a.page-link(href='#') 6
+          li.page-item
+            a.page-link(href='#', aria-label='Next')
+              span(aria-hidden='true') 
+                i.icon-arrow-right
+              span.sr-only Próximo

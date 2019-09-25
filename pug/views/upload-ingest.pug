@@ -1,0 +1,463 @@
+extends /default.pug
+
+block scripts
+  if !starter
+    // Plugins and scripts required by this view
+    script(src='js/tooltips.js')
+    script(src='node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')
+    script(src='js/main.js')
+
+
+block view
+  .animated.fadeIn
+    .row  
+      .col-sm-12
+        h1.main-title Upload de arquivos
+    .row
+      .col-md-6
+        .card.card-upload
+          .card-body
+            form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+              .form-group.row
+                .col-md-12
+                  div.file-upload
+                    input.file-upload-input#file-upload(type="file", multiple)
+                    div.file-upload-label
+                      span.title Fila de arquivos
+                      i.icon-cloud-upload 
+                      span.text Arraste os arquivos aqui ou clique para selecionar
+                      button.btn.btn-primary(type="button") Selecionar arquivos
+      .col-md-6
+        .card.upload-ingest
+          .card-body
+            #accordion(role='tablist')
+              .card.mb-0.item-file
+                #headingOne.card-header(role='tab')
+                  h2.mb-0
+                    img(src="img/icons/icon-pptx.png")
+                    a.collapsed(data-toggle='collapse', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                      | Piql_access_Ambev_presentation.pptx
+                      span.float-right
+                        | Editar metadados
+                        i.fa.fa-chevron-down
+                #collapseOne.content-collapse.collapse(role='tabpanel', aria-labelledby='headingOne', data-parent='#accordion')
+                  .card-body
+                    form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='empresa') Empresa
+                        .col-md-9
+                          select#empresa.form-control(name="empresa")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='date') Date
+                        .col-md-9
+                          select#date.form-control(name="date")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='description') Description
+                        .col-md-9
+                          input#description.form-control(type='text', name='description', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='provenance') Provenance
+                        .col-md-9
+                          input#provenance.form-control(type='text', name='provenance', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='creator') Creator
+                        .col-md-9
+                          input#creator.form-control(type='text', name='creator', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='subject') Subject
+                        .col-md-9
+                          input#subject.form-control(type='text', name='subject', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='publisher') Publisher
+                        .col-md-9
+                          input#publisher.form-control(type='text', name='publisher', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='type') Type
+                        .col-md-9
+                          input#type.form-control(type='text', name='type', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='identifier') Identifier
+                        .col-md-9
+                          input#identifier.form-control(type='text', name='identifier', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='source') Source
+                        .col-md-9
+                          input#source.form-control(type='text', name='source', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='language') Language
+                        .col-md-9
+                          input#language.form-control(type='text', name='language', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='relation') Relation
+                        .col-md-9
+                          input#relation.form-control(type='text', name='relation', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='format') Format
+                        .col-md-9
+                          input#format.form-control(type='text', name='format', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='coverage') Coverage
+                        .col-md-9
+                          input#coverage.form-control(type='text', name='coverage', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='rights') Rights
+                        .col-md-9
+                          input#rights.form-control(type='text', name='rights', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='contributor') Contributor
+                        .col-md-9
+                          input#contributor.form-control(type='text', name='contributor', placeholder='')
+                      .form-group.row
+                        .col-md-3
+                        .col-md-9
+                          button.btn.btn-outline-success.btn-block(type='button') Atualizar metadados
+              .card.mb-0.item-file
+                #headingTwo.card-header(role='tab')
+                  h2.mb-0
+                    img(src="img/icons/icon-pptx.png")
+                    a.collapsed(data-toggle='collapse', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                      | Piql_access_Ambev_presentation.pptx
+                      span.float-right
+                        | Editar metadados
+                        i.fa.fa-chevron-down
+                #collapseTwo.content-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo', data-parent='#accordion')
+                  .card-body
+                    form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='empresa') Empresa
+                        .col-md-9
+                          select#empresa.form-control(name="empresa")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='date') Date
+                        .col-md-9
+                          select#date.form-control(name="date")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='description') Description
+                        .col-md-9
+                          input#description.form-control(type='text', name='description', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='provenance') Provenance
+                        .col-md-9
+                          input#provenance.form-control(type='text', name='provenance', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='creator') Creator
+                        .col-md-9
+                          input#creator.form-control(type='text', name='creator', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='subject') Subject
+                        .col-md-9
+                          input#subject.form-control(type='text', name='subject', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='publisher') Publisher
+                        .col-md-9
+                          input#publisher.form-control(type='text', name='publisher', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='type') Type
+                        .col-md-9
+                          input#type.form-control(type='text', name='type', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='identifier') Identifier
+                        .col-md-9
+                          input#identifier.form-control(type='text', name='identifier', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='source') Source
+                        .col-md-9
+                          input#source.form-control(type='text', name='source', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='language') Language
+                        .col-md-9
+                          input#language.form-control(type='text', name='language', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='relation') Relation
+                        .col-md-9
+                          input#relation.form-control(type='text', name='relation', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='format') Format
+                        .col-md-9
+                          input#format.form-control(type='text', name='format', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='coverage') Coverage
+                        .col-md-9
+                          input#coverage.form-control(type='text', name='coverage', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='rights') Rights
+                        .col-md-9
+                          input#rights.form-control(type='text', name='rights', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='contributor') Contributor
+                        .col-md-9
+                          input#contributor.form-control(type='text', name='contributor', placeholder='')
+                      .form-group.row
+                        .col-md-3
+                        .col-md-9
+                          button.btn.btn-outline-success.btn-block(type='button') Atualizar metadados
+              .card.mb-0.item-file
+                #headingThree.card-header(role='tab')
+                  h2.mb-0
+                    img(src="img/icons/icon-pptx.png")
+                    a.collapsed(data-toggle='collapse', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                      | Piql_access_Ambev_presentation.pptx
+                      span.float-right
+                        | Editar metadados
+                        i.fa.fa-chevron-down
+                #collapseThree.content-collapse.collapse(role='tabpanel', aria-labelledby='headingThree', data-parent='#accordion')
+                  .card-body
+                    form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='empresa') Empresa
+                        .col-md-9
+                          select#empresa.form-control(name="empresa")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='date') Date
+                        .col-md-9
+                          select#date.form-control(name="date")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='description') Description
+                        .col-md-9
+                          input#description.form-control(type='text', name='description', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='provenance') Provenance
+                        .col-md-9
+                          input#provenance.form-control(type='text', name='provenance', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='creator') Creator
+                        .col-md-9
+                          input#creator.form-control(type='text', name='creator', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='subject') Subject
+                        .col-md-9
+                          input#subject.form-control(type='text', name='subject', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='publisher') Publisher
+                        .col-md-9
+                          input#publisher.form-control(type='text', name='publisher', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='type') Type
+                        .col-md-9
+                          input#type.form-control(type='text', name='type', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='identifier') Identifier
+                        .col-md-9
+                          input#identifier.form-control(type='text', name='identifier', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='source') Source
+                        .col-md-9
+                          input#source.form-control(type='text', name='source', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='language') Language
+                        .col-md-9
+                          input#language.form-control(type='text', name='language', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='relation') Relation
+                        .col-md-9
+                          input#relation.form-control(type='text', name='relation', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='format') Format
+                        .col-md-9
+                          input#format.form-control(type='text', name='format', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='coverage') Coverage
+                        .col-md-9
+                          input#coverage.form-control(type='text', name='coverage', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='rights') Rights
+                        .col-md-9
+                          input#rights.form-control(type='text', name='rights', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='contributor') Contributor
+                        .col-md-9
+                          input#contributor.form-control(type='text', name='contributor', placeholder='')
+                      .form-group.row
+                        .col-md-3
+                        .col-md-9
+                          button.btn.btn-outline-success.btn-block(type='button') Atualizar metadados
+              .card.mb-0.item-file
+                #headingFour.card-header(role='tab')
+                  h2.mb-0
+                    img(src="img/icons/icon-pptx.png")
+                    a.collapsed(data-toggle='collapse', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                      | Piql_access_Ambev_presentation.pptx
+                      span.float-right
+                        | Editar metadados
+                        i.fa.fa-chevron-down
+                #collapseFour.content-collapse.collapse(role='tabpanel', aria-labelledby='headingFour', data-parent='#accordion')
+                  .card-body
+                    form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='empresa') Empresa
+                        .col-md-9
+                          select#empresa.form-control(name="empresa")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='date') Date
+                        .col-md-9
+                          select#date.form-control(name="date")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='description') Description
+                        .col-md-9
+                          input#description.form-control(type='text', name='description', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='provenance') Provenance
+                        .col-md-9
+                          input#provenance.form-control(type='text', name='provenance', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='creator') Creator
+                        .col-md-9
+                          input#creator.form-control(type='text', name='creator', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='subject') Subject
+                        .col-md-9
+                          input#subject.form-control(type='text', name='subject', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='publisher') Publisher
+                        .col-md-9
+                          input#publisher.form-control(type='text', name='publisher', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='type') Type
+                        .col-md-9
+                          input#type.form-control(type='text', name='type', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='identifier') Identifier
+                        .col-md-9
+                          input#identifier.form-control(type='text', name='identifier', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='source') Source
+                        .col-md-9
+                          input#source.form-control(type='text', name='source', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='language') Language
+                        .col-md-9
+                          input#language.form-control(type='text', name='language', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='relation') Relation
+                        .col-md-9
+                          input#relation.form-control(type='text', name='relation', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='format') Format
+                        .col-md-9
+                          input#format.form-control(type='text', name='format', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='coverage') Coverage
+                        .col-md-9
+                          input#coverage.form-control(type='text', name='coverage', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='rights') Rights
+                        .col-md-9
+                          input#rights.form-control(type='text', name='rights', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='contributor') Contributor
+                        .col-md-9
+                          input#contributor.form-control(type='text', name='contributor', placeholder='')
+                      .form-group.row
+                        .col-md-3
+                        .col-md-9
+                          button.btn.btn-outline-success.btn-block(type='button') Atualizar metadados
+              .card.mb-0.item-file
+                #headingFive.card-header(role='tab')
+                  h2.mb-0
+                    img(src="img/icons/icon-pptx.png")
+                    a.collapsed(data-toggle='collapse', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                      | Piql_access_Ambev_presentation.pptx
+                      span.float-right
+                        | Editar metadados
+                        i.fa.fa-chevron-down
+                #collapseFive.content-collapse.collapse(role='tabpanel', aria-labelledby='headingFive', data-parent='#accordion')
+                  .card-body
+                    form.form-horizontal(action='', method='post', enctype='multipart/form-data')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='empresa') Empresa
+                        .col-md-9
+                          select#empresa.form-control(name="empresa")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='date') Date
+                        .col-md-9
+                          select#date.form-control(name="date")
+                            option(value="") 
+                            option(value="1") Option #1
+                            option(value="2") Option #2
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='description') Description
+                        .col-md-9
+                          input#description.form-control(type='text', name='description', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='provenance') Provenance
+                        .col-md-9
+                          input#provenance.form-control(type='text', name='provenance', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='creator') Creator
+                        .col-md-9
+                          input#creator.form-control(type='text', name='creator', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='subject') Subject
+                        .col-md-9
+                          input#subject.form-control(type='text', name='subject', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='publisher') Publisher
+                        .col-md-9
+                          input#publisher.form-control(type='text', name='publisher', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='type') Type
+                        .col-md-9
+                          input#type.form-control(type='text', name='type', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='identifier') Identifier
+                        .col-md-9
+                          input#identifier.form-control(type='text', name='identifier', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='source') Source
+                        .col-md-9
+                          input#source.form-control(type='text', name='source', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='language') Language
+                        .col-md-9
+                          input#language.form-control(type='text', name='language', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='relation') Relation
+                        .col-md-9
+                          input#relation.form-control(type='text', name='relation', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='format') Format
+                        .col-md-9
+                          input#format.form-control(type='text', name='format', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='coverage') Coverage
+                        .col-md-9
+                          input#coverage.form-control(type='text', name='coverage', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='rights') Rights
+                        .col-md-9
+                          input#rights.form-control(type='text', name='rights', placeholder='')
+                      .form-group.row
+                        label.col-md-3.col-form-label.text-right(for='contributor') Contributor
+                        .col-md-9
+                          input#contributor.form-control(type='text', name='contributor', placeholder='')
+                      .form-group.row
+                        .col-md-3
+                        .col-md-9
+                          button.btn.btn-outline-success.btn-block(type='button') Atualizar metadados

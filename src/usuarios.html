@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="pt-br">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Moser Damasceno">
+    <meta name="keyword" content="">
+    <title>Piql Admin</title>
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  </head>
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+      <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#"><img class="navbar-brand-full" src="img/brand/EDM_logo.png" alt="EDM Logo"><img class="navbar-brand-minimized" src="img/brand/EDM_logo.png" alt="EDM Logo"></a>
+      <button class="sidebar-minimizer brand-minimizer d-md-down-none button-menu" type="button"><i class="icon-list"></i></button>
+      <ul class="nav navbar-nav d-md-down-none brand-company">
+        <li class="nav-item px-3"><img class="navbar-brand-full" src="img/brand/ambev_logo.png" alt="Ambev Logo"></li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto menu-options">
+        <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-bell"></i><span class="badge badge-pill badge-primary">15</span></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="inner-dropdown-menu">
+              <div class="dropdown-header text-center"><strong>Últimas notificações</strong></div><a class="dropdown-item row" href="#">
+                <div><i class="icon-like"></i></div>
+                <div><span class="date">25/Abril/2019</span>
+                  <p> Marina Almeida recebeu o protocolo <span class="number">32</span></p>
+                </div>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="icon-action-redo"></i></div>
+                <div><span class="date">25/Abril/2019</span>
+                  <p> Marina Almeida recebeu o protocolo <span class="number">32</span></p>
+                </div>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="icon-check"></i></div>
+                <div><span class="date">25/Abril/2019</span>
+                  <p> Marina Almeida recebeu o protocolo <span class="number">32</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item d-md-down-none"><span>Marina Almeida</span></li>
+        <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com"><i class="fa fa-chevron-down"></i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="inner-dropdown-menu">
+              <div class="dropdown-header text-center"><strong>Account</strong></div><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-bell-o"></i></div>
+                <div> Updates</div><span class="badge badge-info">42</span>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-envelope-o"></i></div>
+                <div> Messages</div><span class="badge badge-success">42</span>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-tasks"></i></div>
+                <div> Tasks</div><span class="badge badge-danger">42</span>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-comments"></i></div>
+                <div> Comments</div><span class="badge badge-warning">42</span>
+              </a>
+              <div class="dropdown-header text-center"><strong>Settings</strong></div><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-user"></i></div>
+                <div> Profile</div>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-wrench"></i></div>
+                <div> Settings</div>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-usd"></i></div>
+                <div> Payments</div><span class="badge badge-secondary">42</span>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-file"></i></div>
+                <div> Projects</div><span class="badge badge-primary">42</span>
+              </a>
+              <div class="dropdown-divider"></div><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-shield"></i></div>
+                <div> Lock Account</div>
+              </a><a class="dropdown-item row" href="#">
+                <div><i class="fa fa-lock"></i></div>
+                <div> Logout</div>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div class="app-body">
+      <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_principal.png"><img class="icon-menu-item active" src="img/icons/icone_principal_active.png"></span><span class="texto-menu">Principal</span></a></li>
+            <li class="nav-item"><a class="nav-link has-notification" href="protocolos.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_ver_protocolos.png"><img class="icon-menu-item active" src="img/icons/icone_ver_protocolos_active.png"></span><span class="texto-menu">Ver protocolos</span><span class="badge badge-menu">12</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="criar-protocolo.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_criar_protocolo.png"><img class="icon-menu-item active" src="img/icons/icone_criar_protocolo_active.png"></span><span class="texto-menu">Criar protocolo</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="usuarios.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_usuarios.png"><img class="icon-menu-item active" src="img/icons/icone_usuarios_active.png"></span><span class="texto-menu">Usuários</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="upload.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_upload-de-arquivos.png"><img class="icon-menu-item active" src="img/icons/icone_upload-de-arquivos_active.png"></span><span class="texto-menu">Upload de arquivos</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="upload-ingest.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_upload-de-arquivos.png"><img class="icon-menu-item active" src="img/icons/icone_upload-de-arquivos_active.png"></span><span class="texto-menu">Upload de arquivos - Ingest</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="formularios.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_formulario.png"><img class="icon-menu-item active" src="img/icons/icone_formulario_active.png"></span><span class="texto-menu">Formulário</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="lista-assinar-arquivos.html"><span class="icone-menu"><img class="icon-menu-item" src="img/icons/icone_assinar_arquivos.png"><img class="icon-menu-item active" src="img/icons/icone_assinar_arquivos_active.png"></span><span class="texto-menu">Assinar arquivos</span></a></li>
+            <li class="nav-title">Theme</li>
+            <li class="nav-item"><a class="nav-link" href="colors.html"><span class="icone-menu"><i class="icon-drop"></i></span>Colors</a></li>
+            <li class="nav-item"><a class="nav-link" href="typography.html"><span class="icone-menu"><i class="icon-pencil"></i></span>Typography</a></li>
+            <li class="nav-title">Components</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><span class="icone-menu"><i class="icon-puzzle"></i></span>Base</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html">Breadcrumb</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/cards.html">Cards</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/carousel.html">Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/collapse.html">Collapse</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/forms.html">Forms</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/jumbotron.html">Jumbotron</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/list-group.html">List group</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/navs.html">Navs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/pagination.html">Pagination</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/popovers.html">Popovers</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/progress.html">Progress</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/scrollspy.html">Scrollspy</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/switches.html">Switches</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tables.html">Tables</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tabs.html">Tabs</a></li>
+                <li class="nav-item"><a class="nav-link" href="base/tooltips.html">Tooltips</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><span class="icone-menu"><i class="icon-cursor"></i></span>Buttons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="buttons/buttons.html">Buttons</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/button-group.html">Buttons Group</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"><a class="nav-link" href="buttons/brand-buttons.html">Brand Buttons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="charts.html"><span class="icone-menu"><i class="icon-pie-chart"></i></span>Charts</a></li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><span class="icone-menu"><i class="icon-star"></i></span>Icons</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="icons/coreui-icons.html">CoreUI Icons<span class="badge badge-success">NEW</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/flags.html">Flags</a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/font-awesome.html">Font Awesome<span class="badge badge-secondary">4.7</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="icons/simple-line-icons.html">Simple Line Icons</a></li>
+              </ul>
+            </li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><span class="icone-menu"><i class="icon-bell"></i></span>Notifications</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="notifications/alerts.html">Alerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/badge.html">Badge</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/modals.html">Modals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="widgets.html"><span class="icone-menu"><i class="icon-calculator"></i></span>Widgets<span class="badge badge-primary">NEW</span></a></li>
+            <li class="divider"></li>
+            <li class="nav-title">Extras</li>
+            <li class="nav-item nav-dropdown"><a class="nav-link nav-dropdown-toggle" href="#"><span class="icone-menu"><i class="icon-star"></i></span>Pages</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item"><a class="nav-link" href="login.html" target="_top">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html" target="_top">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="404.html" target="_top">Error 404</a></li>
+                <li class="nav-item"><a class="nav-link" href="500.html" target="_top">Error 500</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="main">
+        <div class="container-fluid">
+          <div class="animated fadeIn">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="main-title">Usuários</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <form action="#">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-4 texto-protocolo"><span>Total de usuários: <b>12</b></span></div>
+                        <div class="col-sm-4 pesquisa-protocolo">
+                          <div class="controls">
+                            <div class="input-group">
+                              <input class="form-control" id="appendedInputButton" placeholder="Pesquisar..."><span class="input-group-append">
+                                <button class="btn btn-secondary" type="button"><i class="icon-magnifier"></i></button></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 filtro-protocolo">Filtrar:
+                          <select class="form-control" name="select1">
+                            <option value="0">Todos</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <table class="table-protocolos table table-responsive-sm table-bordered table-hover datatables">
+                      <thead>
+                        <tr>
+                          <th class="nowrap">Nome</th>
+                          <th class="nowrap">E-mail</th>
+                          <th class="nowrap">Setor</th>
+                          <th class="nowrap">Nível do sistema</th>
+                          <th class="nowrap">Protocolos</th>
+                          <th class="nowrap"> </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="nowrap">Marina Almeida</td>
+                          <td class="nowrap">marina_almeida@gmail.com</td>
+                          <td class="nowrap">Marketing</td>
+                          <td class="nowrap">Administrador</td>
+                          <td class="nowrap">23</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">William Varella</td>
+                          <td class="nowrap">wmvarella@gmail.com</td>
+                          <td class="nowrap">Recursos Humanos</td>
+                          <td class="nowrap">Editor</td>
+                          <td class="nowrap">12</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">Marina Almeida</td>
+                          <td class="nowrap">marina_almeida@gmail.com</td>
+                          <td class="nowrap">Marketing</td>
+                          <td class="nowrap">Administrador</td>
+                          <td class="nowrap">23</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">William Varella</td>
+                          <td class="nowrap">wmvarella@gmail.com</td>
+                          <td class="nowrap">Recursos Humanos</td>
+                          <td class="nowrap">Editor</td>
+                          <td class="nowrap">12</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">Marina Almeida</td>
+                          <td class="nowrap">marina_almeida@gmail.com</td>
+                          <td class="nowrap">Marketing</td>
+                          <td class="nowrap">Administrador</td>
+                          <td class="nowrap">23</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">William Varella</td>
+                          <td class="nowrap">wmvarella@gmail.com</td>
+                          <td class="nowrap">Recursos Humanos</td>
+                          <td class="nowrap">Editor</td>
+                          <td class="nowrap">12</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">Marina Almeida</td>
+                          <td class="nowrap">marina_almeida@gmail.com</td>
+                          <td class="nowrap">Marketing</td>
+                          <td class="nowrap">Administrador</td>
+                          <td class="nowrap">23</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">William Varella</td>
+                          <td class="nowrap">wmvarella@gmail.com</td>
+                          <td class="nowrap">Recursos Humanos</td>
+                          <td class="nowrap">Editor</td>
+                          <td class="nowrap">12</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">Marina Almeida</td>
+                          <td class="nowrap">marina_almeida@gmail.com</td>
+                          <td class="nowrap">Marketing</td>
+                          <td class="nowrap">Administrador</td>
+                          <td class="nowrap">23</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="nowrap">William Varella</td>
+                          <td class="nowrap">wmvarella@gmail.com</td>
+                          <td class="nowrap">Recursos Humanos</td>
+                          <td class="nowrap">Editor</td>
+                          <td class="nowrap">12</td>
+                          <td><a class="link-editar" href="#" data-toggle="tooltip" title="" data-original-title="Editar"><i class="icon-options-vertical"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true"> <i class="icon-arrow-left"></i></span><span class="sr-only">Anterior</span></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true"> <i class="icon-arrow-right"></i></span><span class="sr-only">Próximo</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="js/tooltips.js"></script>
+    <script src="node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
